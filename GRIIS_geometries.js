@@ -358,7 +358,7 @@ var pa_griis = ee.FeatureCollection([
   ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Curieuse')).union().first()).set('griisCountryCode','SC_CRSR').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Bontebok National Park')).union().first()).set('griisCountryCode','ZA_BNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Prince Edward Islands')).union().first()).set('griisCountryCode','ZA_PEI').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
-  ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Huvalu Conservation Area')).union().first()).set('griisCountryCode','NU_HCA').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
+  ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Huvalu Conservation Area')).union().first()).set('griisCountryCode','NU_HCA').set('checklist','GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Mare Aux Cochons')).union().first()).set('griisCountryCode','SC_MAC').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filterBounds(ee.Geometry.Polygon([[[38.685501731196105, -4.810101999775137],[38.675030387201964, -4.801549106034604],[38.641041434565246, -4.799667455012494],[38.57016346225673, -4.899581836862673],[38.527591440772355, -5.129411543856465],[38.555057261084855, -5.256603365078346],[38.67522022495204, -5.229252456140356],[38.72328541049892, -5.100003352593226],[38.84138843784267, -5.05417860506643],[38.85306141147548, -4.844848688300456],[38.83383533725673, -4.7175770711974785],[38.75212452182704, -4.742896422504297],[38.71229908237392, -4.796953545921137],[38.692899773342674, -4.813135242024204]]])).union().first()).set('griisCountryCode','TZ_EU').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.stringContains('NAME','Morne Seychellois National Park')).union().first()).set('griisCountryCode','SC_MSNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
@@ -375,7 +375,7 @@ var pa_griis = ee.FeatureCollection([
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Amani')).union().first()).set('griisCountryCode','TZ_AFNR').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Praslin National Park')).union().first()).set('griisCountryCode','SC_PNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Richtersveld National Park')).union().first()).set('griisCountryCode','ZA_RVNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
-  ee.Feature(wdpa.filter(ee.Filter.and(ee.Filter.eq('NAME','Namdrik'), ee.Filter.eq('DESIG','Ramsar Site, Wetland of International Importance'))).union().first()).set('griisCountryCode','MH-NMK_RS').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
+  ee.Feature(wdpa.filter(ee.Filter.and(ee.Filter.eq('NAME','Namdrik'), ee.Filter.eq('DESIG','Ramsar Site, Wetland of International Importance'))).union().first()).set('griisCountryCode','MH-NMK_RS').set('checklist','GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Namaqua National Park')).union().first()).set('griisCountryCode','ZA_NQNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Ngorongoro Conservation Area')).union().first()).set('griisCountryCode','TZ_NCA').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
   ee.Feature(wdpa.filter(ee.Filter.eq('NAME','Kalahari Gemsbok National Park')).union().first()).set('griisCountryCode','ZA_KGNP').set('checklist','PA-GRIIS').set('level',2).select(['griisCountryCode','checklist','level']),
@@ -415,6 +415,5 @@ Export.table.toAsset({
   assetId: 'users/crowtherlab/GRIIS/GRIIS_geometries', 
   // maxVertices: 1e6
 });
-
 
 
