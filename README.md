@@ -1,10 +1,19 @@
 # geoGRIIS
 
+<p align="center">
+  <img src="overview.png" alt="Description of the image" style="width:65%;">
+</p>
+<p align="center">
+  <em>Figure showing the georeferenced datasets, with GRIIS in black and PA-GRIIS in red.</em>
+</p>
+
+## Description
+
 This is a standing version of the matched geometries of the Global Register of Introduced and Invasive Species (GRIIS) datasets [1]. GRIIS presents validated and verified national checklists of introduced (alien) and invasive alien species at the country, territory, and associated island level. The general, easy-to-use GRIIS product is the country compendium [2], however, many more more spatially accurate checklists have been produced, e.g. for islands or proteced areas (PA-GRIIS). All these datasets can be accessed through the Global Biodiversity Information Facility (GBIF) [3], e.g. for the United States [4]. 
 
 This repository contains code to produce the geometries for almost all GRIIS and PA-GRIIS checklists and a lookup table to match the individual checklists with their associated geometries. The geometries are based on the FAO Global Administrative Unit Layers (GAUL) 2015 and the Database of Global Administrative Boundaries (GADM) 3.6; protected areas are based on the World Database on Protected Areas (WDPA)[5]. 
 
-If you want to use any of the code, Google Earth Engine assets or the lookup table, please do not hesitate to contact me. 
+If you want to use any of the code, Google Earth Engine assets or the lookup table, please do not hesitate to contact me.
 
 
 __________________________________________________ 
